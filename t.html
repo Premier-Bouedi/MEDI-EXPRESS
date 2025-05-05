@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MEDI-EXPRESS - Livraison de médicaments</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">MEDI-EXP RESS</div>
+    <nav>
+      <a href="#">Catégories</a>
+      <a href="#">Recherche</a>
+      <a href="#">Livraison</a>
+      <a href="#">Contact</a>
+      <a href="#">Pour les pharmacies</a>
+    </nav>
+    <div class="actions">
+      <span class="cart"><i class="fa-solid fa-cart-shopping"></i><span id="cart-count"></span></span>
+      <button class="btn-login"><i class="fa-regular fa-user"></i> Se connecter</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>VOS MEDICAMENTS <br> LIVRES A VOTRE PORTE</h1>
+      <p> Plus besoin de vous deplacez !<br>MEDI-EXPRESS vous propose un service de livraison rapide et sécurisé. <br>Commandez en ligne et recevez vos médicaments en moins de 2 heures.</p>
+      <div class="hero-buttons">
+        <button class="btn-primary">Commander maintenant</button>
+        <button class="btn-outline">En savoir plus</button>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="image/vrlogo.png" alt="Logo de MEDI-EXPRES, service de livraison de médicaments">
+    </div>
+  </section>
+
+  <section class="features">
+    <h2>Pourquoi choisir MEDI-EXPRESS ?</h2>
+    <div class="feature-grid">
+      <div class="feature">
+        <h3><i class="fa-solid fa-rocket"></i> Livraison rapide</h3>
+        
+        <p>Recevez vos médicaments en moins de 2 heures partout dans la ville.</p>
+      </div>
+      <div class="feature">
+        <h3><i class="fa-solid fa-bell"></i> Service 24/7</h3>
+        <p>Notre équipe est disponible à toute heure pour répondre à vos besoins urgents.</p>
+      </div>
+      <div class="feature">
+        <h3><i class="fa-solid fa-check"></i> Produits certifiés</h3>
+        <p>Tous nos médicaments sont authentiques et proviennent de fournisseurs agréés.</p>
+      </div>
+      <div class="feature">
+        <h3><i class="fa-solid fa-lock"></i> Sécurité & confidentialité</h3>
+        <p>Vos données personnelles et médicales sont strictement protégées.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="categories">
+    <div class="categories-header">
+      <h2>Catégories de médicaments</h2>
+      <button class="btn-outline">Toutes les catégories</button>
+    </div>
+  </section>
+
+  <section class="category-cards">
+    <div class="category-grid">
+      <div class="category-card">
+        <div class="emoji"><i class="fa-solid fa-pills"></i></div>
+        <h3>Douleur et fièvre</h3>
+        <p>Médicaments contre la douleur, fièvre et inflammation.</p>
+        <a href="#" class="btn-small">Voir les produits</a>
+      </div>
+
+      <div class="category-card">
+        <div class="emoji"><i class="fa-solid fa-baby"></i></div>
+        <h3>Rhume et grippe</h3>
+        <p>Solutions pour soulager les symptômes du rhume et de la grippe.</p>
+        <a href="#" class="btn-small">Voir les produits</a>
+      </div>
+
+      <div class="category-card">
+        <div class="emoji"><i class="fa-solid fa-tablets"></i></div>
+        <h3>Troubles digestifs</h3>
+        <p>Médicaments pour les problèmes digestifs et intestinaux.</p>
+        <a href="#" class="btn-small">Voir les produits</a>
+      </div>
+
+      <div class="category-card">
+        <div class="emoji"><i class="fa-solid fa-droplet"></i></div>
+        <h3>Sommeil et stress</h3>
+        <p>Produits pour favoriser le sommeil et réduire l'anxiété.</p>
+        <a href="#" class="btn-small">Voir les produits</a>
+      </div>
+
+      <div class="category-card">
+        <div class="emoji"><i class="fa-solid fa-bottle-droplet"></i></div>
+        <h3>Allergies</h3>
+        <p>Traitements contre les réactions allergiques saisonnières.</p>
+        <a href="#" class="btn-small">Voir les produits</a>
+      </div>
+
+      <div class="category-card">
+        <div class="emoji"><i class="fa-solid fa-capsules"></i></div>
+        <h3>Vitamines et suppléments</h3>
+        <p>Compléments nutritionnels pour maintenir votre santé.</p>
+        <a href="#" class="btn-small">Voir les produits</a>
+      </div>
+    </div>
+  </section>
+  <section class="services">
+    <H4>NOS SERVICES</H4>
+    <a href="ordonnance.html">
+      <div class="service-box service-ordonnance">
+        <p>ORDONNANCE</p>
+      </div>
+    </a>
+    <a href="teleconsultation.html">
+      <div class="service-box service-teleconsultation">
+        <p>Téléconsultation avec un pharmacien</p>
+      </div>
+    </a>
+    <a href="conseils.html">
+      <div class="service-box service-conseil">
+        <p>Conseils santé personnalisés</p>
+      </div>
+    </a>
+    <a href="DON.html">
+      <div class="service-box service-don-sang">
+        <p>DON DE SANG</p>
+      </div>
+    </a>
+</section>
+ <section class="features">
+    <div class="cta">
+      <h3>Besoin de médicaments rapidement ?</h3>
+      <p>Commandez maintenant et recevez vos médicaments en moins de 2 heures. Notre service est disponible 24h/24 et 7j/7.</p>
+      <button class="btn-primary">Commander maintenant</button>
+    </div>
+</section>
+
+    <footer class="footer">
+    <div class="footer-links">
+      <div>
+        <h4>MEDI-EXPRESS</h4>
+        <p>Votre service de livraison de médicaments à domicile</p>
+      </div>
+      <div>
+        <h4>Liens Rapides</h4>
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Catégories</a></li>
+          <li><a href="#">Recherche</a></li>
+          <li><a href="#">Livraison</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>+213 21 47 00 00</p>
+        <p>contact@medihub.dz</p>
+      </div>
+    </div>
+    <p class="copyright">© 2025 MEDI-EXPRESS. Tous droits réservés.</p>
+  </footer>
+
+  <style>
+  :root {
+  --primary-color: #00c28b;
+  --secondary-color: #009e74;
+  --accent-color: #f4f6f8;
+  --text-color: #1f2d3d;
+  --text-light: #555;
+  --white: #ffffff;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  --radius: 12px;
+  --font-main: 'Segoe UI', 'Roboto', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  background: var(--white);
+  color: var(--text-color);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+/* === HEADER === */
+.navbar {
+  background: var(--primary-color);
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.navbar nav a {
+  margin: 0 1rem;
+  font-weight: 500;
+  color: white;
+}
+
+.navbar nav a:hover {
+  text-decoration: underline;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cart {
+  font-size: 1.4rem;
+}
+
+.btn-login {
+  background: white;
+  color: var(--primary-color);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: var(--radius);
+  font-weight: 600;
+  cursor: pointer;
+  transition:  0.3s;
+}
+
+.btn-login:hover {
+  background: var(--accent-color);
+}
+
+/* === HERO === */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--accent-color);
+  padding: 3rem 2rem;
+}
+
+.hero-text {
+  flex: 1;
+  padding: 1rem;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: var(--text-light);
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-primary,
+.btn-outline,
+.btn-small {
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-outline:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+.hero-image img {
+  max-width: 450px;
+  width: 100%;
+  border-radius: var(--radius);
+}
+
+/* === FEATURES === */
+.features {
+  padding: 3rem 2rem;
+  background: #fff;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.feature {
+  background: var(--accent-color);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: transform 0.2s;
+}
+
+.feature:hover {
+  transform: translateY(-4px);
+}
+
+/* === CATEGORIES === */
+.categories {
+  background: #f9fafb;
+  padding: 3rem 2rem;
+}
+
+.categories-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.category {
+  background: white;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-weight: 500;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+/* === CATEGORY CARDS === */
+.category-cards {
+  padding: 4rem 5rem;
+  background: #fff;
+}
+
+.category-card {
+  background: var(--accent-color);
+  padding: 2rem;
+  text-align: center;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+}
+
+.category-card .emoji {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.btn-small {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  
+}
+
+.btn-small:hover {
+  background: var(--secondary-color);
+}
+
+/* === FOOTER === */
+.footer {
+  background: var(--text-color);
+  color: white;
+  padding: 3rem 2rem;
+}
+
+.footer .cta {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer-links div {
+  min-width: 200px;
+}
+
+.footer h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer ul li a {
+  color: white;
+  opacity: 0.8;
+}
+
+.footer ul li a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.footer .copyright {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.875rem;
+  opacity: 0.7;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .categories-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .navbar nav {
+    margin-top: 1rem;
+  }
+}
+/* === SERVICES === */
+.services {
+  padding: 3rem 2rem;
+  background: #f9fafb;
+  text-align: center;
+}
+
+.service-box {
+  background: var(--white);
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  display: inline-block;
+  width: calc(33% - 2rem);
+  margin: 1rem;
+  text-align: center;
+}
+
+.service-box p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-top: 1rem;
+}
+
+.service-box:hover {
+  transform: translateY(-8px);
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.service-box:hover p {
+  color: white;
+}
+
+.service-ordonnance {
+  background-color: #f1f9f5;
+}
+
+.service-livraison {
+  background-color: #f1fdfc;
+}
+
+.service-teleconsultation {
+  background-color: #f1f8fd;
+}
+
+.service-conseil {
+  background-color: #f8f1fd;
+}
+
+.service-don-sang {
+  background-color: #f9f1f1;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .service-box {
+    width: 100%;
+  }
+}
+
+
+  </style>
+</body>
+</html>
