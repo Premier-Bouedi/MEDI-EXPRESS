@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Envoyer une ordonnance - MEDI-EXPRESS</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="index.html" class="logo">MEDI-EXPRESS</a>
+    <nav>
+      <a href="index.html#categories">Catégories</a>
+      <a href="index.html#categories">Recherche</a>
+      <a href="index.html#services">Livraison</a>
+      <a href="#contact">Contact</a>
+      <a href="#">Pour les pharmacies</a>
+    </nav>
+    <div class="actions">
+      <span class="cart"><i class="fa-solid fa-cart-shopping"></i><span id="cart-count"></span></span>
+      <button class="btn-login"><i class="fa-regular fa-user"></i> Se connecter</button>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <h1>Envoyer une ordonnance</h1>
+    <p>Prenez votre ordonnance en photo, nous la transmettons à une pharmacie partenaire et nous vous livrons en moins de 2 heures.</p>
+  </section>
+
+  <main class="page">
+    <div class="steps-list">
+      <div><b>1</b>Prenez l'ordonnance en photo, bien lisible.</div>
+      <div><b>2</b>Un pharmacien partenaire la vérifie et vous confirme le prix.</div>
+      <div><b>3</b>Un livreur vous apporte les médicaments chez vous.</div>
+    </div>
+
+    <h2>Votre commande</h2>
+    <form class="form" data-message="Ordonnance reçue. Un pharmacien vous rappelle pour confirmer.">
+      <label>Photo de l'ordonnance
+        <input type="file" accept="image/*,.pdf" required>
+        <span class="hint">Formats acceptés : photo ou PDF.</span>
+      </label>
+      <div class="row">
+        <label>Nom complet <input type="text" autocomplete="name" required></label>
+        <label>Téléphone <input type="tel" autocomplete="tel" required></label>
+      </div>
+      <label>Adresse de livraison
+        <input type="text" autocomplete="street-address" placeholder="Quartier, rue, point de repère" required>
+      </label>
+      <label>Paiement
+        <select required>
+          <option value="">Choisir…</option>
+          <option>Espèces à la livraison</option>
+          <option>Mobile Money</option>
+        </select>
+      </label>
+      <label>Remarque pour le pharmacien (facultatif)
+        <textarea rows="3"></textarea>
+      </label>
+      <button class="btn-primary" type="submit">Envoyer l'ordonnance</button>
+    </form>
+
+    <p class="notice">Le pharmacien vérifie chaque ordonnance avant la livraison. Les médicaments soumis à prescription ne sont délivrés que sur ordonnance valide.</p>
+  </main>
+
+    <footer class="footer">
+    <div class="footer-links" id="contact">
+      <div>
+        <h4>MEDI-EXPRESS</h4>
+        <p>Votre service de livraison de médicaments à domicile</p>
+      </div>
+      <div>
+        <h4>Liens Rapides</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="index.html#categories">Catégories</a></li>
+          <li><a href="ordonnance.html">Ordonnance</a></li>
+          <li><a href="teleconsultation.html">Téléconsultation</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>+213 21 47 00 00</p>
+        <p>contact@medihub.dz</p>
+      </div>
+    </div>
+    <p class="copyright">© 2025 MEDI-EXPRESS. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
