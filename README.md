@@ -16,24 +16,32 @@ MEDI-EXPRESS est un service de livraison de médicaments à domicile, basé à L
 
 ## Aperçu
 
-Ouvrez `t.html` dans un navigateur. Aucune installation n'est nécessaire.
+Ouvrez `index.html` dans un navigateur. Aucune installation n'est nécessaire.
 
 ## Structure du dépôt
 
 ```
-t.html            Page d'accueil du site
-image/            Logos, photo de livraison et visuel ordonnance
-README.md         Ce document
-CONTRIBUTING.md   Comment travailler à plusieurs sur le dépôt
-.gitignore        Fichiers à ne jamais envoyer sur GitHub
+index.html             Page d'accueil du site
+ordonnance.html        Envoi d'ordonnance
+teleconsultation.html  Téléconsultation avec un pharmacien
+conseils.html          Conseils santé
+DON.html               Don de sang
+style.css              Styles communs à toutes les pages
+script.js              Panier, boutons et formulaires
+image/                 Logos, photo de livraison et visuel ordonnance
+README.md              Ce document
+CONTRIBUTING.md        Comment travailler à plusieurs sur le dépôt
+.gitignore             Fichiers à ne jamais envoyer sur GitHub
 ```
 
 ## À faire
 
-- [ ] Renommer `t.html` en `index.html`, pour que le site s'ouvre directement en ligne (GitHub Pages, Netlify).
-- [ ] Ajouter les fichiers appelés par la page et encore absents : `style.css`, `script.js`, `ordonnance.html`, `teleconsultation.html`, `conseils.html`.
-- [ ] Corriger le logo texte « MEDI-EXP RESS » en « MEDI-EXPRESS ».
-- [ ] Brancher le panier et le bouton « Se connecter ».
+- [x] Renommer `t.html` en `index.html`, pour que le site s'ouvre directement en ligne (GitHub Pages, Netlify).
+- [x] Ajouter les fichiers appelés par la page : `style.css`, `script.js`, `ordonnance.html`, `teleconsultation.html`, `conseils.html`, `DON.html`.
+- [x] Corriger le logo texte « MEDI-EXP RESS » en « MEDI-EXPRESS ».
+- [ ] Remplacer le téléphone et l'e-mail du pied de page (+213… et medihub.dz) par les coordonnées gabonaises.
+- [ ] Relier les formulaires à un vrai serveur (aujourd'hui ils affichent seulement une confirmation).
+- [ ] Catalogue de produits, vrai panier et compte client.
 - [ ] Envoi d'ordonnance en photo et suivi de la livraison.
 - [ ] Espace pharmacies : réception et préparation des commandes.
 
