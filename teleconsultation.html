@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Téléconsultation avec un pharmacien - MEDI-EXPRESS</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="index.html" class="logo">MEDI-EXPRESS</a>
+    <nav>
+      <a href="index.html#categories">Catégories</a>
+      <a href="index.html#categories">Recherche</a>
+      <a href="index.html#services">Livraison</a>
+      <a href="#contact">Contact</a>
+      <a href="#">Pour les pharmacies</a>
+    </nav>
+    <div class="actions">
+      <span class="cart"><i class="fa-solid fa-cart-shopping"></i><span id="cart-count"></span></span>
+      <button class="btn-login"><i class="fa-regular fa-user"></i> Se connecter</button>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <h1>Téléconsultation avec un pharmacien</h1>
+    <p>Posez vos questions sur un traitement, un médicament ou un petit souci de santé à un pharmacien, par appel ou en vidéo.</p>
+  </section>
+
+  <main class="page">
+    <div class="steps-list">
+      <div><b>1</b>Choisissez un créneau et le moyen de contact.</div>
+      <div><b>2</b>Un pharmacien vous appelle à l'heure prévue.</div>
+      <div><b>3</b>Si besoin, commandez les produits conseillés et faites-vous livrer.</div>
+    </div>
+
+    <h2>Réserver un créneau</h2>
+    <form class="form" data-message="Demande enregistrée. Un pharmacien vous contacte au créneau choisi.">
+      <div class="row">
+        <label>Nom complet <input type="text" autocomplete="name" required></label>
+        <label>Téléphone <input type="tel" autocomplete="tel" required></label>
+      </div>
+      <div class="row">
+        <label>Date <input type="date" required></label>
+        <label>Heure <input type="time" required></label>
+      </div>
+      <label>Moyen de contact
+        <select required>
+          <option value="">Choisir…</option>
+          <option>Appel téléphonique</option>
+          <option>Appel vidéo WhatsApp</option>
+        </select>
+      </label>
+      <label>Votre question
+        <textarea rows="4" placeholder="Décrivez brièvement votre besoin" required></textarea>
+      </label>
+      <button class="btn-primary" type="submit">Réserver</button>
+    </form>
+
+    <p class="notice">La téléconsultation avec un pharmacien ne remplace pas une consultation médicale. En cas d'urgence, appelez immédiatement les secours ou rendez-vous aux urgences les plus proches.</p>
+  </main>
+
+    <footer class="footer">
+    <div class="footer-links" id="contact">
+      <div>
+        <h4>MEDI-EXPRESS</h4>
+        <p>Votre service de livraison de médicaments à domicile</p>
+      </div>
+      <div>
+        <h4>Liens Rapides</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="index.html#categories">Catégories</a></li>
+          <li><a href="ordonnance.html">Ordonnance</a></li>
+          <li><a href="teleconsultation.html">Téléconsultation</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>+213 21 47 00 00</p>
+        <p>contact@medihub.dz</p>
+      </div>
+    </div>
+    <p class="copyright">© 2025 MEDI-EXPRESS. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>

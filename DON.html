@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Don de sang - MEDI-EXPRESS</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="index.html" class="logo">MEDI-EXPRESS</a>
+    <nav>
+      <a href="index.html#categories">Catégories</a>
+      <a href="index.html#categories">Recherche</a>
+      <a href="index.html#services">Livraison</a>
+      <a href="#contact">Contact</a>
+      <a href="#">Pour les pharmacies</a>
+    </nav>
+    <div class="actions">
+      <span class="cart"><i class="fa-solid fa-cart-shopping"></i><span id="cart-count"></span></span>
+      <button class="btn-login"><i class="fa-regular fa-user"></i> Se connecter</button>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <h1>Don de sang</h1>
+    <p>Un don de sang peut sauver jusqu’à trois vies. Inscrivez-vous et nous vous mettons en relation avec le centre de transfusion le plus proche.</p>
+  </section>
+
+  <main class="page">
+    <div class="steps-list">
+      <div><b>1</b>Inscrivez-vous avec vos coordonnées.</div>
+      <div><b>2</b>Nous vous indiquons le centre de transfusion et les horaires.</div>
+      <div><b>3</b>Sur place, un entretien médical confirme que vous pouvez donner.</div>
+    </div>
+
+    <h2>Je veux donner mon sang</h2>
+    <form class="form" data-message="Merci ! Nous vous contactons pour organiser votre don.">
+      <div class="row">
+        <label>Nom complet <input type="text" autocomplete="name" required></label>
+        <label>Téléphone <input type="tel" autocomplete="tel" required></label>
+      </div>
+      <div class="row">
+        <label>Ville <input type="text" value="Libreville" required></label>
+        <label>Groupe sanguin (si connu)
+          <select>
+            <option>Je ne sais pas</option>
+            <option>A+</option><option>A-</option><option>B+</option><option>B-</option>
+            <option>AB+</option><option>AB-</option><option>O+</option><option>O-</option>
+          </select>
+        </label>
+      </div>
+      <button class="btn-primary" type="submit">M'inscrire</button>
+    </form>
+
+    <p class="notice">Les conditions pour donner (âge, poids, santé) sont vérifiées par le personnel médical du centre de transfusion le jour du don.</p>
+  </main>
+
+    <footer class="footer">
+    <div class="footer-links" id="contact">
+      <div>
+        <h4>MEDI-EXPRESS</h4>
+        <p>Votre service de livraison de médicaments à domicile</p>
+      </div>
+      <div>
+        <h4>Liens Rapides</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="index.html#categories">Catégories</a></li>
+          <li><a href="ordonnance.html">Ordonnance</a></li>
+          <li><a href="teleconsultation.html">Téléconsultation</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>+213 21 47 00 00</p>
+        <p>contact@medihub.dz</p>
+      </div>
+    </div>
+    <p class="copyright">© 2025 MEDI-EXPRESS. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
